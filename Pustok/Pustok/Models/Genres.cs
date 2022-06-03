@@ -12,5 +12,7 @@ namespace Pustok.Models
         [Required]
         [StringLength(maximumLength:60)]
         public string Name { get; set; }
+
+        public List<Books> books { get; set; }
     }
 }

@@ -24,6 +24,8 @@ namespace Pustok.Models
         public bool IsAvailable { get; set; }
         public string SubDesc { get; set; }
         public int Rate { get; set; }
+
+        
    
     }
 }

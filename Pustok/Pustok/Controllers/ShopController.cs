@@ -23,8 +23,8 @@ namespace Pustok.Controllers
         {
             ShopViewModel shopVW = new ShopViewModel
             {
-                Genre = _context.Genres.ToList(),
-                book = _context.Book.ToList(),
+                Genre = _context.Genres.Include(x=>x.books).ToList(),
+                //book = _context.Book.Include(x =>x.Genres).ToList(),
                
             };
 
